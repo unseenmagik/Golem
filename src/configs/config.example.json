@@ -1,7 +1,7 @@
 {
     "interface": "0.0.0.0",
     "port": 8080,
-    "title": "RDMopole2",
+    "title": "Golem",
     "locale": "en",
     "style": "dark",
     "lastNestMigration": "2019-03-07T01:00:00Z",

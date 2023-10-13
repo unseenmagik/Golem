@@ -1,14 +1,8 @@
-![Node.js CI](https://github.com/versx/RDMopole2/workflows/Node.js%20CI/badge.svg)
-![Lint](https://github.com/versx/RDMopole2/workflows/Lint/badge.svg)  
-
-[![GitHub Release](https://img.shields.io/github/release/versx/RDMopole2.svg)](https://github.com/versx/RDMopole2/releases/)
-[![GitHub Contributors](https://img.shields.io/github/contributors/versx/RDMopole2.svg)](https://github.com/versx/RDMopole2/graphs/contributors/)
-[![Discord](https://img.shields.io/discord/552003258000998401.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/zZ9h9Xa)  
-
-# RDMopole2  
+# Golem 
+(fork of RDMoople2 for Golbat)
 
 ## Installation  
-1. Clone repository `git clone https://github.com/versx/RDMopole2`  
+1. Clone repository `git clone https://github.com/unseenmagik/Golem`  
 1. Install dependencies `npm run update`  
 1. Copy config `cp src/configs/config.example.json src/configs/config.json`  
 1. Create a Discord bot at https://discord.com/developers and enter the `botToken`, `clientId`, and `clientSecret` in your `config.json`  
@@ -30,7 +24,7 @@
 1. Run `npm start`  
 
 ## Notes  
-If you want to host your images locally where RDM-opole2 resides, change your `pokemon` and `eggs` image urls to something like the following:  
+If you want to host your images locally where Golem resides, change your `pokemon` and `eggs` image urls to something like the following:  
 Pokemon Id is always 3 digits i.e `007`, `047`, `147` although form will be whatever the form number is i.e `12`, `195`, `4032` etc  
 ```
 "images": {
@@ -45,9 +39,9 @@ Once everything is setup and running appropriately, you can add this to PM2 ecos
 module.exports = {
   apps : [
   {
-    name: 'RDM-opole2',
+    name: 'Golem',
     script: 'index.js',
-    cwd: '/home/username/RDM-opole2/src/',
+    cwd: '/home/username/Golem/src/',
     instances: 1,
     autorestart: true,
     watch: false,
